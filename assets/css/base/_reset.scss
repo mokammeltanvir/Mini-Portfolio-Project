@@ -46,10 +46,11 @@ ul{
   &.btn-border{
     background-color: #ff7720;
     padding: 10px 30px;
+    border: 2px solid #ff7720;
     &:hover{
       background-color: transparent;
-      color: #ff7720;
-      border: 2px solid #ff7720;
+      color: #fff;
+      
     }
   }
   &.btn-box{
@@ -59,5 +60,51 @@ ul{
       background-color: #ff7720;
       color: #fff;
     }
+  }
+}
+
+@for $i from 1 to 12 {
+  .pt-#{$i}{
+    padding-top: $i * 10px;
+  }
+  .pb-#{$i}{
+    padding-bottom: $i * 10px;
+  }
+  .pl-#{$i}{
+    padding-left: $i * 10px;
+  }
+  .pr-#{$i}{
+    padding-right: $i * 10px;
+  }
+  .px-#{$i}{
+    padding-left: $i * 10px;
+    padding-right: $i * 10px;
+  }
+  .py-#{$i}{
+    padding-top: $i * 10px;
+    padding-bottom: $i * 10px;
+  }
+  .m-#{$i}{
+    margin: $i * 10px;
+  }
+  .mt-#{$i}{
+    margin-top: $i * 10px;
+  }
+  .mb-#{$i}{
+    margin-bottom: $i * 10px;
+  }
+  .ml-#{$i}{
+    margin-left: $i * 10px;
+  }
+  .mr-#{$i}{
+    margin-right: $i * 10px;
+  }
+  .mx-#{$i}{
+    margin-left: $i * 10px;
+    margin-right: $i * 10px;
+  }
+  .my-#{$i}{
+    margin-top: $i * 10px;
+    margin-bottom: $i * 10px;
   }
 }
